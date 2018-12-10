@@ -5,7 +5,7 @@ const UserGreeting = React.lazy(() => import('./UserGreeting'));
 const GuestGreeting = React.lazy(() => import('./GuestGreeting'));
 
 const Greeting = ({isLoggedIn}) => (
-    <Suspense fallback={() => "cargando"}>
+    <Suspense fallback={<p>Cargando...</p>}>
         {
             isLoggedIn
             ? <UserGreeting/>
