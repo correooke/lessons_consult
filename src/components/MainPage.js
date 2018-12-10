@@ -5,6 +5,9 @@ import LoginButton from './LoginButton';
 import Greeting from './Greeting';
 
 class MainPage extends React.Component {
+
+    state = { isLoggedIn: false };
+    
     constructor(props) {
         super(props);
 
@@ -15,7 +18,8 @@ class MainPage extends React.Component {
             .handleLogoutClick
             .bind(this);
         this.state = {
-            isLoggedIn: false
+            isLoggedIn: false,
+            time: new Date(),
         };
     }
 
@@ -44,7 +48,7 @@ class MainPage extends React.Component {
         return (
             <div className={getClassName(isLoggedIn)}>
                 <Greeting isLoggedIn={isLoggedIn}/> {button}
-                {isLoggedIn && <Customers></Customers>
+                {isLoggedIn && <Customers data={this.props.data}></Customers>
 }
             </div>
         );

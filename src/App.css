@@ -31,3 +31,42 @@
   }
 }
 
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+
+.title {
+  font-size: 8vw;
+}
+
+
+.element-animation {
+  cursor: pointer;
+}
+
+.element-animation:hover{
+  
+  animation: animationFrames both 4s;
+  animation-iteration-count: 1;
+  
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(-10px,-10px)  rotate(0deg) ;
+  }
+  15% {
+    transform:  translate(-46px,-10px)  rotate(27deg) ;
+  }
+  100% {
+    transform:  translate(200px,0px)  rotate(180deg) ;
+  }
+}
+
