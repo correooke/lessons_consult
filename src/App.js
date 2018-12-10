@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import LoginControl from './LoginControl';
+import MainPage from './components/MainPage';
 
 class App extends Component {
   
   render() {
     return (
       <div className="App">
-        <h1 className="title">Clase 1</h1>
-        <LoginControl></LoginControl>
+        <h1 className="title">React</h1>
+        <MainPage />
       </div>
     );
   }

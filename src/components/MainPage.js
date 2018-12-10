@@ -1,10 +1,10 @@
 import React from 'react';
 import Customers from './Customers';
-import LogoutButton from './components/LogoutButton';
-import LoginButton from './components/LoginButton';
-import Greeting from './components/Greeting';
+import LogoutButton from './LogoutButton';
+import LoginButton from './LoginButton';
+import Greeting from './Greeting';
 
-class LoginControl extends React.Component {
+class MainPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -51,4 +51,4 @@ class LoginControl extends React.Component {
     }
 }
 
-export default LoginControl;
+export default MainPage;

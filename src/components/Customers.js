@@ -1,6 +1,6 @@
 import React from 'react';
 
-const place = "https://via.placeholder.com/150/FF0000/FFFFFF?Text=";
+const place = "https://via.placeholder.com/150/FF0000/FFFFFF?text=";
 
 const data = [{
 
