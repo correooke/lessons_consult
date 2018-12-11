@@ -72,5 +72,11 @@
 
 .customer-row {
   background-color: rgb(192, 60, 60);
+  cursor: pointer;
+}
+
+.customers-list { 
+   margin-top: 60px;
+   margin-bottom: 600px;
 }
 
